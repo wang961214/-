@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容管理</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a href="main.html" class="navbar-brand">后台管理</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav ">
+                    <li><a href="main.html"><i class="glyphicon glyphicon-home"></i> 后台首页</a></li>
+                    <li><a href=" userlist.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+                    <li class="active"><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+                    <li><a href="tag.html"><i class="glyphicon glyphicon-tags"></i> 标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">admin <i
+                            class="caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""> <i class="glyphicon glyphicon-screenshot"></i> 前台首页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-user"></i> 个人主页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-cog"></i> 个人设置</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-credit-card"></i> 账户中心</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-heart"></i> 我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="glyphicon glyphicon-off"></i> 退出</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container body">
+    <div class="col-sm-2 ">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="content.html ">内容管理</a></li>
+            <li class="active list-group-item"><a href="content-in.html">添加内容</a></li>
+        </ul>
+    </div>
+
+    <section class="col-sm-10 clearfix">
+        <h1>内容管理</h1>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="content.html">内容管理</a></li>
+            <li role="presentation" class="active"><a href="content-in.html">添加内容</a></li>
+        </ul>
+        <form action="">
+            <div class="form-group">
+                <label class="control-label">标题</label>
+                <input type="text" class="form-control"  placeholder="请输入文章标题">
+            </div>
+            <div class="form-group">
+                <label class="control-label">文章内容</label>
+                <textarea name="" id="" class="form-control" rows="10" placeholder="请输入文章正文部分"></textarea>
+            </div>
+            <div class="form-group clearfix">
+                <input type="checkbox">
+                <label for="" class="control-label">全局置顶</label>
+                <button class="btn btn-default pull-right">发布文章</button>
+            </div>
+
+        </form>
+    </section>
+</div>
+<footer>
+    Copyright © 2012-2015 www.qingruan.com ICP备xxxxxx号-4
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容管理</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a href="main.html" class="navbar-brand">后台管理</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav ">
+                    <li><a href="main.html"><i class="glyphicon glyphicon-home"></i> 后台首页</a></li>
+                    <li><a href=" userlist.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+                    <li class="active"><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+                    <li><a href="tag.html"><i class="glyphicon glyphicon-tags"></i> 标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">admin <i
+                            class="caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""> <i class="glyphicon glyphicon-screenshot"></i> 前台首页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-user"></i> 个人主页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-cog"></i> 个人设置</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-credit-card"></i> 账户中心</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-heart"></i> 我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="glyphicon glyphicon-off"></i> 退出</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container body">
+    <div class="col-sm-2 ">
+        <ul class="list-group">
+            <li class="active list-group-item"><a href="content.html">内容管理</a></li>
+            <li class="list-group-item"><a href="content-in.html">添加内容</a></li>
+        </ul>
+    </div>
+
+    <section class="col-sm-10 clearfix">
+        <h1>内容管理</h1>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="content.html">内容管理</a></li>
+            <li role="presentation"><a href="content-in.html">添加内容</a></li>
+        </ul>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>文章标题</th>
+                <th>作者</th>
+                <th>发布时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>泛Mooc职业教育，效果和就业为王</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>产品经理常犯的7大错误，你造吗？</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>如何正确使用Python日志系统</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>c语言const修饰符怎么使用？</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Android开发用onCreateOptionsMenu()如何创</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>怎样才能成为优秀的ios开发工程师</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Android今年推出了些什么新技术？</th>
+                <td>朱朝兵</td>
+                <td>2015/08/08</td>
+                <td class="dropdown">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">操作 <i class="caret"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">编辑</a></li>
+                        <li><a href="#">删除</a></li>
+                        <li><a href="#">全局置顶</a></li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <ul class="pagination pull-right">
+            <li><a href="" class="glyphicon glyphicon-chevron-left"></a></li>
+            <li class="active"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li class="next"><a href="" class="glyphicon glyphicon-chevron-right"></a></li>
+        </ul>
+    </section>
+</div>
+<footer>
+    Copyright © 2012-2015 www.qingruan.com ICP备xxxxxx号-4
+</footer>
+
+</body>
+</html>
