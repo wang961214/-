@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">后台管理</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav ">
+                    <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> 后台首页</a></li>
+                    <li class="active"><a href="userlist.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+                    <li><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+                    <li><a href="tag.html"><i class="glyphicon glyphicon-tags"></i> 标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">admin <i
+                            class="caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""> <i class="glyphicon glyphicon-screenshot"></i> 前台首页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-user"></i> 个人主页</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-cog"></i> 个人设置</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-credit-card"></i> 账户中心</a></li>
+                            <li><a href=""> <i class="glyphicon glyphicon-heart"></i> 我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="glyphicon glyphicon-off"></i> 退出</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container body">
+    <div class="col-sm-2 ">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="userlist.html">用户管理</a></li>
+            <li class="active list-group-item"><a href="usersearch.html">用户搜索</a></li>
+            <li class="list-group-item"><a href="" data-toggle="modal" data-target="#mymodal">添加用户</a></li>
+        </ul>
+    </div>
+    <section class="col-sm-10">
+        <h1>用户管理</h1>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="userlist.html">用户列表</a></li>
+            <li role="presentation" class="active"><a href="usersearch.html">搜索用户</a></li>
+            <li role="presentation"><a href="" data-toggle="modal" data-target="#mymodal">添加用户</a></li>
+        </ul>
+        <div class="search">
+            <div class="alert alert-info" role="alert">
+                <p><span>技巧提示：</span>支持模糊搜索和匹配搜索，匹配搜索使用*代替！</p>
+            </div>
+            <form action="">
+                <div class="form-group">
+                    <label for="" class="control-label">用户名</label>
+                    <input type="text" class="form-control" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">UID</label>
+                    <input type="text" class="form-control" placeholder="请输入用户UID">
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">选择用户组</label>
+                    <select name="" id="" class="form-control">
+                        <option>限制会员</option>
+                        <option>新手上路</option>
+                        <option>注册会员</option>
+                        <option>中级会员</option>
+                        <option>高级会员</option>
+                    </select>
+                </div>
+                <button class="btn btn-default">提交</button>
+            </form>
+        </div>
+    </section>
+</div>
+<footer>
+    Copyright © 2012-2015 www.qingruan.com ICP备xxxxxx号-4
+</footer>
+<div class="modal fade" id="mymodal" role="dialog" aria-labelledby="mymodallabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4>添加用户</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label class="control-label" for="">用户名</label>
+                        <input class="form-control" type="text" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="">密码</label>
+                        <input class="form-control" type="password" placeholder="请输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="">确认用户密码</label>
+                        <input class="form-control" type="password" placeholder="请确认输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="">请输入用户邮箱</label>
+                        <input class="form-control" type="email" placeholder="请输入用户邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="">所属用户组</label>
+                        <select name="" class="form-control">
+                            <option>限制会员</option>
+                            <option>新手上路</option>
+                            <option>注册会员</option>
+                            <option>中级会员</option>
+                            <option>高级会员</option>
+                        </select>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="col-sm-1 col-sm-offset-7">
+                            <button class="btn btn-success" type="submit">提交</button>
+                        </div>
+                        <div class="col-sm-1 col-sm-offset-1">
+                            <button class="btn btn-danger" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
